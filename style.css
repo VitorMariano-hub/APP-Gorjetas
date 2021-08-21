@@ -1,0 +1,114 @@
+:root {
+  --cor-first: #01474a;
+  --cor-second: #24c3af;
+  --cor-bg: #c5e4e7;
+  --cor-paragrap: #989999;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Staatliches', cursive;
+  background-color: var(--cor-bg);
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: var(--cor-first);
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+.wrapper {
+  display: flex;
+  max-width: 50%;
+  height: 300px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  margin-right: 10px;
+}
+
+.col-1 p {
+  color: var(--cor-first);
+}
+
+.col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+  background-color: var(--cor-first);
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+.info h3 {
+  font-size: 1.8rem;
+  color: var(--cor-second);
+}
+
+.info p {
+  align-self: center;
+  color: #f2f2f2f2;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--cor-second);
+}
+
+.btn-math {
+  border: none;
+  padding: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.1);
+  background-color: var(--cor-first);
+  color: #f2f2f2f2;
+  font-weight: 900;
+}
+
+.tip {
+  display: grid;
+  gap: 10px;
+  grid: 35px 35px 35px/ 80px 80px 80px;
+}
+
+.select {
+  grid-column: 1/4;
+}
+
+.inputs {
+  font-size: 1rem;
+  border: none;
+  background-color: var(--cor-bg);
+  text-align: right;
+  width: 90%;
+}

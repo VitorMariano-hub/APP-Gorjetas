@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>App</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>App calculadora de gorjetas</h1>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="col-1">
+          <div class="conta">
+            <p>Conta</p>
+            <input id="total" class="inputs" type="text" placeholder="0" />
+          </div>
+          <div class="tip">
+            <p class="select">selecione a dica %</p>
+            <button class="btn-math">5%</button>
+            <button class="btn-math">10%</button>
+            <button class="btn-math">15%</button>
+            <button class="btn-math">25%</button>
+            <button class="btn-math">50%</button>
+          </div>
+          <div class="people">
+            <p>Numero de pessoas</p>
+            <input class="inputs" id="pessoa" type="text" placeholder="0" />
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="info">
+            <p>Total consumido</p>
+            <h3 id="valorTotal">R$ 0.00</h3>
+          </div>
+          <div class="info">
+            <p>Conta de gorjeta por pessoa</p>
+            <h3 id="valorPessoa">R$ 0.00</h3>
+          </div>
+          <button class="btn" id="reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
